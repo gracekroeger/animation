@@ -1,0 +1,38 @@
+		
+body {
+	background: url('../img/stars.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        max-height: 720px;
+        width:100%;
+        max-width: 960px;
+        margin:0 auto;
+        overflow:hidden;
+        position:relative;
+}
+
+h1 {font-family: 'Megrim', cursive;
+	text-align:center;
+	font-size:5em;
+	color:white;
+	opacity: .7}
+
+@keyframes moon{ 
+
+0% {transform: translate(-100vw,110vh);}
+
+
+50% {transform: translate(25vw,-10vh);}
+
+
+100% {transform: translate(100vw,110vh);display:none;}
+}
+
+#moon {
+	position:absolute;
+	bottom:-400px;
+	left:-400px;
+ animation:moon 7s ease-in-out 1s 1 alternate forwards;
+}
